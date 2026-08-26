@@ -1,77 +1,73 @@
-# Rahul Raj Singh — Systems From Scratch
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:1e293b&height=120&section=header&text=Rahul%20Raj%20Singh&fontSize=38&fontColor=ffffff&animation=fadeIn" />
 
-> **7 FAANG-hire-signal projects** built **pure Python stdlib, zero deps** — DB engine, replicated log, blockchain, search engine, language + VM, HTTP server, 3D renderer. Each proven with **deterministic simulators / differential tests / conformance harnesses**.
+<p align="center">
+  <a href="https://github.com/rahulrajsinghwork15072005-a11y"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&pause=1000&color=94A3B8&center=true&vCenter=true&width=600&lines=Systems+from+scratch+%E2%80%94+no+frameworks%2C+just+code;Distributed+systems+%7C+Databases+%7C+Compilers+%7C+Search" /></a>
+</p>
 
-`forgelang` · `forgehttp` · `pylog` · `leafdb` · `miniraster` · `searchforge` · `minichain` — all `80+ /100` under strict FAANG resume bar.
+### Hey, I'm Rahul 👋
 
----
+I like rebuilding the hard parts from scratch to actually understand them. No frameworks, no shortcuts — just Python, C++, and a lot of whiteboard math. Currently exploring how databases, distributed logs, and compilers really work under the hood.
 
-## 📌 Pinned — Lead with these 7
-
-| Project | /100 | What it proves | Tests | Links |
-|---|---|---|---|---|
-| **[pylog](https://github.com/rahulrajsinghwork15072005-a11y/pylog)** — Kafka-style replicated log + Raft | **90** | Segmented `PLG1` log `log.py:27`, `truncate_from:394`, Raft `raft.py:620` PreVote/Raft lease/snapshot, deterministic `sim.py:185` virtual-clock | 53 tests | `pylog/log.py:27` `pylog/raft.py:620` |
-| **[leafdb](https://github.com/rahulrajsinghwork15072005-a11y/leafdb)** — SQLite-inspired DB engine | **89** | B+ split/borrow/merge `btree.py:186` + `check():363`, WAL `core.cpp:666` CRC+redo, shadow pager `pager.py:88`, SQL `sqlparse.py:568` | 137 tests vs SQLite | `leafdb/btree.py:186` |
-| **[searchforge](https://github.com/rahulrajsinghwork15072005-a11y/searchforge)** — Hybrid search IR engine | **89** | Positional index `index.py:107`, BM25 `bm25.py:35` k1=1.5, phrase `search.py:36`, co-occurrence vectors `vector.py:110`, RankNet `ltr.py:116`, global-IDF sharding `shard.py:50` `ARCHITECTURE.md:56` | 50 tests | `searchforge/search.py:36` |
-| **[minichain](https://github.com/rahulrajsinghwork15072005-a11y/minichain)** — Minimal blockchain | **88** | PoW `block.py:84` compact `block.py:9`, retarget `chain.py:82` 0.25-4×, Merkle, heaviest-work `chain.py:299`, gas VM `contract.py:76` 21 opcodes, P2P `node.py:17` | ~40 tests | `minichain/chain.py:82` |
-| **[forgelang](https://github.com/rahulrajsinghwork15072005-a11y/forgelang)** — Language + dual VM | **86** | Pratt `parser.py:365`, slot/upvalue `compiler.py:192` `vm.py:368`, mark-sweep `gc.py:75`, conformance harness `driver.py:62` | 64 tests | `forgelang/compiler.py:192` |
-| **[forgehttp](https://github.com/rahulrajsinghwork15072005-a11y/forgehttp)** — HTTP/1.1 from sockets | **83** | `StreamParser` `parser.py:219` CL vs chunked smuggling guard `122`, `selectors` `loop.py:43` vs thread `server.py:26`, proxy `proxy.py:132` | 112 tests | `forgehttp/parser.py:122` |
-| **[miniraster](https://github.com/rahulrajsinghwork15072005-a11y/miniraster)** — Software 3D renderer | **72** | Clip `rasterizer.py:31`, `1/w` correct `206`, shadow PCF `322`, PNG `image.py:69` | 35 tests | `miniraster/rasterizer.py:206` |
-
-> Strict bar: `90-100` = distributed DB with proofs, `80-89` = complex system from scratch, `60-79` = solid, `40-59` = clone/CRUD, `<40` = trivial.
+- 🔭 Right now: making `pylog` and `leafdb` crash-safe and a bit faster
+- 🧠 Love talking about: Raft, B+ trees, query planning, and why `1/w` matters for textures
+- 📍 VIT Vellore · open to systems / backend internships
 
 ---
 
-## 🗂️ Full portfolio (25) — remove duplicates before resume
+### Featured work
 
-| Repo | /100 | Type | Keep? |
-|---|---|---|---|
-| forgelang | 86 | language | ✅ pin |
-| forgehttp | 83 | systems | ✅ pin |
-| pylog | 90 | distributed | ✅ pin |
-| leafdb | 89 | database | ✅ pin |
-| miniraster | 72 | graphics | ✅ 5th |
-| searchforge | 89 | IR/search | ✅ pin |
-| minichain | 88 | blockchain | ✅ pin |
-| healthcare-appointment-manager | 68 | full-stack CRUD+ | optional 6th |
-| Compiler_Visualised_RRS | 66 | compiler viz | merge into forgelang |
-| TOWER_DEFENCE | 64 | A* game | portfolio only |
-| LOGIC-GATES | 62 | circuit sim | portfolio only |
-| wikiConnect | 54 | canvas demo | keep 1 of 3 |
-| makeNOTES | 52 | canvas demo | **duplicate — hide** |
-| compiler-forge | 52 | compiler viz | **duplicate — hide** |
-| mockDM | 48 | canvas demo | **duplicate — hide** |
-| OSWEBSITE | 47 | OS viz | hide |
-| spotifytiers | 45 | API wrapper | hide |
-| Netflix_Clone_Portfolio | 40 | portfolio site | hide |
-| dsa-tracker | 38 | tracker | hide |
-| OS_CLONE | 38 | WinXP clone | hide |
-| CSKWEBSITE | 28 | fan site | hide |
-| LFC_WEBSITE | 26 | fan site | **duplicate — hide** |
-| MY-portfolio | 22 | portfolio | **duplicate — hide** |
-| Mepersonal | 12 | tribute | hide |
-| healthcare_appointment_manager | 0 | empty duplicate | **removed** |
+> These are the ones I'd walk through in an interview — each one runs with `pip install -e . && python -m pytest`.
 
-*Interview-prep notes in `Desktop/projects/interview_prep/` are local whiteboard scripts for the 7 above — not repos.*
+| Project | What it is | Why I built it |
+|---|---|---|
+| [**pylog**](https://github.com/rahulrajsinghwork15072005-a11y/pylog) | Kafka-style replicated log + Raft in pure Python | To learn how Raft *really* commits — so I made the log itself the Raft WAL with virtual-clock tests |
+| [**leafdb**](https://github.com/rahulrajsinghwork15072005-a11y/leafdb) | Tiny SQLite-like DB: B+ tree, WAL, MVCC | I kept getting tripped by `BTREE` internals, so I wrote one and diff-tested it against SQLite |
+| [**searchforge**](https://github.com/rahulrajsinghwork15072005-a11y/searchforge) | Hybrid search: BM25 + vectors + learning-to-rank | Search felt like magic — now it's an inverted index, global-IDF sharding, and a RankNet I can debug |
+| [**minichain**](https://github.com/rahulrajsinghwork15072005-a11y/minichain) | Minimal blockchain: PoW, Merkle, little VM | Wanted to see what “heaviest chain wins” actually means in code |
+| [**forgelang**](https://github.com/rahulrajsinghwork15072005-a11y/forgelang) | Small language with Pratt parser → bytecode VM | The classic “how does code become bytes?” — with two backends that have to agree |
+| [**forgehttp**](https://github.com/rahulrajsinghwork15072005-a11y/forgehttp) | HTTP/1.1 from raw sockets | I was tired of not knowing what `keep-alive` really does |
+| [**miniraster**](https://github.com/rahulrajsinghwork15072005-a11y/miniraster) | Software 3D renderer + ray tracer | Built the math a GPU does by hand — matrices, `1/w`, and a BVH that actually helps |
+
+<details>
+<summary>More projects</summary>
+
+- `healthcare-appointment-manager` — clinic booking with waitlists and a little scheduling logic
+- `compiler-forge` / `Compiler_Visualised_RRS` — visual bits from the compiler course
+- `TOWER_DEFENCE`, `LOGIC-GATES` — A* and circuit sims I use for teaching
+- A few site clones and notes repos from earlier — kept for reference, not the main story
+
+</details>
 
 ---
 
-## 🚀 Quick start (any of the 7)
+### Stack
 
-```bash
-git clone https://github.com/rahulrajsinghwork15072005-a11y/<repo>.git
-cd <repo>
-pip install -e .   # or just pytest (stdlib only for most)
-python -m pytest -q
-```
+<p>
+  <img src="https://skillicons.dev/icons?i=python,cpp,js,ts,go,sqlite,docker,git,linux" />
+</p>
 
-## Docs
-
-* Each repo has `README.md` + `ARCHITECTURE.md` + `tests/` proving correctness (differential vs SQLite, Raft simulator, global-IDF shard proof, etc.)
-* No frameworks, no ORMs, no `npm` — everything is data structures + math you can whiteboard.
+`Python` · `C++17` · `SQLite` · `Raft` · `BM25` · `B+ Tree` · `HTTP` · `Vulkan` *learning*
 
 ---
 
-**Contact:** Rahul Raj Singh · `rahulrajsinghwork15072005-a11y` · focus: systems, DB, distributed, IR, compilers
+### Stats
 
-*Built Aug 2026 — all projects `pure Python stdlib` unless noted.*
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=rahulrajsinghwork15072005-a11y&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="140" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=rahulrajsinghwork15072005-a11y&layout=compact&theme=tokyonight&hide_border=true" height="140" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=rahulrajsinghwork15072005-a11y&theme=tokyonight&hide_border=true" />
+</p>
+
+---
+
+### Let's talk
+
+- GitHub: [@rahulrajsinghwork15072005-a11y](https://github.com/rahulrajsinghwork15072005-a11y)
+- Email: `rahulrajsingh2k5@gmail.com`
+
+> If you want the deep dive, each repo has a `README` + `ARCHITECTURE.md` and tests you can run. Happy to walk through any of them.
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e293b,100:0f172a&height=80&section=footer" />
